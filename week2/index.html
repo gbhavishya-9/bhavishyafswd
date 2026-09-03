@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Week 2 Registration</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Week 2 Registration Form</h1>
+      <p>Complete all required details to register.</p>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Personal details</legend>
+
+          <p>
+            <label for="first-name">First name <span aria-hidden="true">*</span></label><br />
+            <input type="text" id="first-name" name="first_name" autocomplete="given-name" required />
+          </p>
+
+          <p>
+            <label for="last-name">Last name <span aria-hidden="true">*</span></label><br />
+            <input type="text" id="last-name" name="last_name" autocomplete="family-name" required />
+          </p>
+
+          <p>
+            <label for="date-of-birth">Date of birth <span aria-hidden="true">*</span></label><br />
+            <input type="date" id="date-of-birth" name="date_of_birth" autocomplete="bday" required />
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Contact details</legend>
+
+          <p>
+            <label for="email">Email address <span aria-hidden="true">*</span></label><br />
+            <input type="email" id="email" name="email" autocomplete="email" required />
+          </p>
+
+          <p>
+            <label for="phone">Phone number <span aria-hidden="true">*</span></label><br />
+            <input type="tel" id="phone" name="phone" autocomplete="tel" required />
+          </p>
+
+          <p>
+            <label for="address">Address <span aria-hidden="true">*</span></label><br />
+            <textarea id="address" name="address" rows="3" autocomplete="street-address" required></textarea>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Account details</legend>
+
+          <p>
+            <label for="username">Username <span aria-hidden="true">*</span></label><br />
+            <input type="text" id="username" name="username" autocomplete="username" minlength="3" required />
+          </p>
+
+          <p>
+            <label for="password">Password <span aria-hidden="true">*</span></label><br />
+            <input type="password" id="password" name="password" autocomplete="new-password" minlength="8" required />
+            <br />
+            <small>Use at least 8 characters.</small>
+          </p>
+
+          <p>
+            <label for="confirm-password">Confirm password <span aria-hidden="true">*</span></label><br />
+            <input type="password" id="confirm-password" name="confirm_password" autocomplete="new-password" minlength="8" required />
+          </p>
+        </fieldset>
+
+        <p>
+          <input type="checkbox" id="terms" name="terms" required />
+          <label for="terms">I agree to the terms and conditions <span aria-hidden="true">*</span></label>
+        </p>
+
+        <button type="submit">Register</button>
+        <button type="reset">Clear form</button>
+      </form>
+    </main>
+  </body>
+</html>
