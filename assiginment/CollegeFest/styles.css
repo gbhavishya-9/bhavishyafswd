@@ -1,0 +1,21 @@
+/* College Fest styles */
+:root{--accent:#2b6cb0;--muted:#666}
+*{box-sizing:border-box}
+body{font-family:Inter, Arial, sans-serif;line-height:1.5;color:#222;margin:0;background:#f7f9fb}
+.container{max-width:1000px;margin:0 auto;padding:20px}
+.site-header{background:linear-gradient(90deg,var(--accent),#4aa3d9);color:#fff;padding:18px 0}
+.fest-title{margin:0;font-size:28px}
+.tag{margin:4px 0 0;font-size:14px;opacity:.95}
+.main-nav ul{display:flex;gap:12px;list-style:none;padding:10px 20px;margin:0}
+.main-nav a{color:#fff;text-decoration:none;padding:6px 8px;border-radius:6px}
+.main-nav a:hover{background:rgba(255,255,255,0.12)}
+.card{background:#fff;border-radius:8px;padding:18px;margin:18px 0;box-shadow:0 2px 6px rgba(15,15,15,0.04)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.fees{width:100%;border-collapse:collapse;margin-top:12px}
+.fees th,.fees td{border:1px solid #e6eef6;padding:10px;text-align:left}
+.fees thead th{background:#f0f8ff}
+.coords{list-style:none;padding:0;margin:8px 0 0}
+.coords li{padding:8px 0;border-bottom:1px dashed #eee}
+.site-footer{background:#0f1724;color:#bcd;text-align:center;padding:16px;margin-top:24px}
+
+@media (max-width:520px){.main-nav ul{flex-wrap:wrap}}

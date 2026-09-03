@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Font Style Changer</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;padding:28px;background:#f4f6f8}
+    .card{background:#fff;padding:18px;border-radius:8px;max-width:700px;margin:0 auto;box-shadow:0 2px 6px rgba(0,0,0,0.05)}
+    label{display:block;margin:12px 0 6px;font-weight:bold}
+    textarea{width:100%;min-height:120px;padding:10px;border:1px solid #cbd5e1;border-radius:6px;box-sizing:border-box;font:inherit;resize:vertical}
+    select,button{padding:8px;border-radius:6px}
+    button{border:1px solid #334155;background:#334155;color:#fff;cursor:pointer}
+    button:hover{background:#1e293b}
+    .result{margin-top:20px;padding-top:16px;border-top:1px solid #e2e8f0}
+    .result-heading{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    #changedParagraph{margin-top:12px;font-size:18px;white-space:pre-wrap;overflow-wrap:anywhere}
+    #copyStatus{min-height:1.2em;color:#166534}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Change Paragraph Font</h1>
+    <label for="paragraphInput">Enter a paragraph:</label>
+    <textarea id="paragraphInput">This paragraph will change its font style when you pick a font from the list above. Try selecting different fonts to see the change.</textarea>
+
+    <label for="fontSelect">Choose font:</label>
+    <select id="fontSelect">
+      <option value="Arial, sans-serif">Arial</option>
+      <option value="'Times New Roman', Times, serif">Times New Roman</option>
+      <option value="Verdana, Geneva, sans-serif">Verdana</option>
+      <option value="'Courier New', Courier, monospace">Courier New</option>
+    </select>
+
+    <section class="result" aria-labelledby="resultHeading">
+      <div class="result-heading">
+        <h2 id="resultHeading">Changed paragraph</h2>
+        <button id="copyButton" type="button">Copy paragraph</button>
+      </div>
+      <p id="changedParagraph"></p>
+      <p id="copyStatus" role="status" aria-live="polite"></p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
